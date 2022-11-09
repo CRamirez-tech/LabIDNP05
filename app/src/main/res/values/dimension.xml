@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="separation_labels">42dp</dimen>
+    <dimen name="separation_boxes">15dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="vertical_labels_linear">12dp</dimen>
+    <dimen name="vertical_margin_linear">40dp</dimen>
+
+
+</resources>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">LabIDNP05</string>
+    <string name="dni">Dni</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="colegio">Colegio</string>
+    <string name="carrera">Carrera</string>
+    <string-array name="tipos_colegios">
+        <item>Público</item>
+        <item>Privado</item>
+        <item>Parroquial</item>
+    </string-array>
+    <string-array name="carreras">
+        <item>Ingeniería Química</item>
+        <item>Ingeniería Ambiental</item>
+        <item>Ingeniería de Materiales</item>
+        <item>Ingeniería Metalúrgica</item>
+        <item>Ingeniería de Industrias Alimentarias</item>
+        <item>Ingeniería de Sistemas</item>
+        <item>Ingeniería Eléctrica</item>
+        <item>Ingeniería Electrónica</item>
+        <item>Ingeniería Mecánica</item>
+        <item>Ingeniería Industrial</item>
+        <item>Ingeniería de Telecomunicaciones</item>
+        <item>Ingeniería Geofísica</item>
+        <item>Ingeniería Geológica</item>
+        <item>Ingeniería de Minas</item>
+        <item>Ingeniería Civil</item>
+        <item>Ingeniería Sanitaria</item>
+        <item>Ingeniería Pesquera</item>
+        <item>Ciencia de la Computación</item>
+        <item>Física</item>
+        <item>Matemática</item>
+        <item>Química</item>
+        <item>Biología</item>
+        <item>Ciencias de la Nutrición</item>
+        <item>Contabilidad</item>
+        <item>Finanzas</item>
+        <item>Trabajo Social</item>
+        <item>Antropología</item>
+        <item>Turismo y Hotelería</item>
+        <item>Sociología</item>
+        <item>Historia</item>
+        <item>Psicología</item>
+        <item>Relaciones Industriales</item>
+        <item>Ciencias de Comunicación</item>
+        <item>Artes</item>
+        <item>Filosofía</item>
+        <item>Literatura y Lingüística</item>
+        <item>Administración</item>
+        <item>Marketing</item>
+        <item>Gestión</item>
+        <item>Banca y Seguros</item>
+        <item>Arquitectura</item>
+        <item>Medicina</item>
+        <item>Enfermería</item>
+        <item>Agronomía</item>
+        <item>Economía</item>
+        <item>Derecho</item>
+        <item>Educación</item>
+    </string-array>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="prompt_email">Dni</string>
+    <string name="prompt_password">Nombres</string>
+    <string name="action_sign_in">Ingreso</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_login2">LoginActivity2</string>
+</resources>

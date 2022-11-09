@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_actividad">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="Registro de Usuario"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/dni"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="@dimen/separation_labels"
+        android:text="@string/nombres"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="@dimen/separation_labels"
+        android:text="@string/fecha_de_nacimiento"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="@dimen/separation_labels"
+        android:text="@string/apellidos"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="@dimen/separation_labels"
+        android:text="@string/colegio"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="@dimen/separation_labels"
+        android:text="@string/carrera"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="0dp"
+        android:ems="8"
+        android:hint="@string/dni"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
+        android:autofillHints="" />
+
+    <Spinner
+        android:id="@+id/spinnerColegio"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/editBirthDate"
+        android:layout_alignEnd="@+id/editDni"
+        android:layout_marginTop="@dimen/separation_boxes"
+        android:layout_marginEnd="0dp"
+        android:entries="@array/tipos_colegios"
+        app:layout_constraintStart_toStartOf="@+id/editDni"
+        app:layout_constraintTop_toBottomOf="@+id/editBirthDate" />
+
+    <EditText
+        android:id="@+id/editNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDni"
+        android:layout_alignEnd="@+id/editDni"
+        android:layout_marginTop="@dimen/separation_boxes"
+        android:layout_marginEnd="0dp"
+        android:ems="8"
+        android:hint="@string/nombres"
+        android:inputType="textPersonName|text"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/editDni"
+        app:layout_constraintTop_toBottomOf="@+id/editDni"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNombres"
+        android:layout_alignEnd="@+id/editDni"
+        android:layout_marginTop="@dimen/separation_boxes"
+        android:layout_marginEnd="0dp"
+        android:ems="8"
+        android:hint="@string/apellidos"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/editDni"
+        app:layout_constraintTop_toBottomOf="@+id/editNombres"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editApellidos"
+        android:layout_alignEnd="@+id/editDni"
+        android:layout_marginTop="@dimen/separation_boxes"
+        android:layout_marginEnd="0dp"
+        android:ems="8"
+        android:hint="11/11/2022"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/editDni"
+        app:layout_constraintTop_toBottomOf="@+id/editApellidos"
+        android:autofillHints="" />
+
+    <Spinner
+        android:id="@+id/spinnerCarrera"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/spinnerColegio"
+        android:layout_alignEnd="@+id/editDni"
+        android:layout_marginTop="@dimen/separation_boxes"
+        android:layout_marginEnd="0dp"
+        android:entries="@array/carreras"
+        app:layout_constraintStart_toStartOf="@+id/editDni"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerColegio" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="46dp"
+        android:text="Registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCarrera" />
+
+</RelativeLayout>
